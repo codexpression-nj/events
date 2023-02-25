@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import SignIn from './components/SignIn';
 import EventList from './components/EventList';
 import Signup from './components/SignUp';
+import NoEventsFound from './components/NoEventsFound';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Stack.Screen name="List" component={EventList} />
         <Stack.Screen name="SignIn" component={SignIn} />
         <Stack.Screen name="SignUp" component={Signup} />
+        <Stack.Screen name="NoEvents" component={NoEventsFound} />
       </Stack.Navigator>
         </NavigationContainer>
 
